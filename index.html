@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pasarela</title>
+  <script src="https://use.fontawesome.com/fa4e67e080.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="item-purchase-container">
+          <img src="http://res.cloudinary.com/alxcrmr/image/upload/v1507003595/laptop_w0c9fz.png" alt="Image of a Laptop">
+          <p class="item-name">Laptop Notebook</p>
+          <h4>$699.99</h4>
+        </div>
+  <div class="payment-container">
+    <form method="POST" action="server.php">
+      <h3>Payment Method</h3>
+      <div class="payment-types">
+        <i class="fa fa-cc-visa" aria-hidden="true"></i>
+        <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+        <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+        <i class="fa fa-cc-discover" aria-hidden="true"></i>
+      </div>
+      <label for="cardholder">Cardholder Name</label>
+      <input type="text" id="cardholder" name="fullname">
+
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" name="card">
+
+      <label for="expireDate" class="expireDate">Expiry Date</label>
+      <label for="cvv" class="cvv">CVV2</label>
+      <div class="expire-cvv-inputs">
+        <input type="text" id="expireDate" name="expire">
+        <input type="password" id="cvv" name="cvv">
+      </div>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+</div>   
+</body>
+</html>
